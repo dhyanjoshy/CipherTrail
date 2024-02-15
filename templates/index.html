@@ -1,17 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask User ID App</title>
-</head>
-<body>
-    <h1>Enter User ID</h1>
-    <form action="{{ url_for('show_user_id') }}" method="post">
-        <label for="user_id">User ID:</label>
-        <input type="text" id="user_id" name="user_id" required>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-</body>
+  <head>
+  	<title>Login 10</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+	</head>
+	<body class="img js-fullheight" style="background: linear-gradient(rgba(83, 0, 28, 0.884), rgba(49, 0, 45, 0.726)), url('{{ url_for('static', filename='images/bg.jpg') }}');">
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">CIPHER TRAIL</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap p-0">
+		      	<h3 class="mb-4 text-center">What is your ID ?</h3>
+		      	<form action="{{ url_for('show_user_id') }}" class="signin-form" method="post">
+		      		<div class="form-group">
+		      			<input type="text" class="form-control" placeholder="ID" name = "user_id" required>
+		      		</div>
+	            <div class="form-group">
+	            	<button type="submit" class="form-control btn btn-primary submit px-3">Submit</button>
+	            </div>
+	            
+	          </form>
+	          
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/popper.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+	</body>
 </html>
+
