@@ -19,7 +19,7 @@ def show_user_id():
         clue = user_clue[user_id]
     else:
         clue = "Check the User ID"
-    return render_template('show_user_id.html', clue=clue)
+    return render_template('show_user_id1.html', clue=clue)
 
 if __name__ == '__main__':
     app.run(debug=True)
