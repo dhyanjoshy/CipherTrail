@@ -3,6 +3,10 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 @app.route('/')
+def game():
+    return render_template('game.html')
+
+@app.route('/main')
 def index():
     return render_template('index.html')
 
