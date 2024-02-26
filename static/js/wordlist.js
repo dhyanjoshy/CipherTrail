@@ -27,4 +27,8 @@ const wordList = [
             word: "flipkart",
             hint: "An E-Commerce website"
         },
+        {
+            word: "huawei",
+            hint: "A Mobile Brand"
+        },
     ];
